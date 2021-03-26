@@ -2,16 +2,21 @@ import React from 'react'
 import ListItem from '@material-ui/core/ListItem';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import Typography from '@material-ui/core/Typography';
-
+import NoProfile from '../assets/img/no-image.jpeg'
+import Shinji from '../assets/img/shinji.png'
 
 const Chat = (props) => {
   const isQuestion = (props.type === 'question');
   const classes = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
+
   return(
     <ListItem className={classes}>
       <ListItemAvatar>
-        <Avatar alt="icon" src="/static/images/avatar/2.jpg" />
+          {isQuestion ? (
+              <Avatar alt="icon" src={Shinji} />
+          ) : (
+              <Avatar alt="icon" src={NoProfile} />
+          )}
       </ListItemAvatar>
       <div className="p-chat__bubble">{props.text}</div>
     </ListItem>
