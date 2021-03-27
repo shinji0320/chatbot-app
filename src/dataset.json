@@ -1,4 +1,4 @@
-const defaultDataset = {
+{
     "init": {
         "answers": [
             {"content": "仕事を依頼したい", "nextId": "job_offer"},
@@ -67,7 +67,7 @@ const defaultDataset = {
             {"content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/"},
             {"content": "最初の質問に戻る", "nextId": "init"}
         ],
-        "question": "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。"
+        "question": "フロントエンド向けの教材の提供！\n詳細はYouTube動画で紹介しています。"
     },
     "dating": {
         "answers": [
@@ -77,5 +77,3 @@ const defaultDataset = {
         "question": "まずは一緒にランチでもいかがですか？DMしてください😘"
     }
 }
-
-export default defaultDataset

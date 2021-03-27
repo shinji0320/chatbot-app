@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 
 
 const useStyles = makeStyles(() => (
@@ -23,7 +23,7 @@ const Answer = (props) => {
   const classes = useStyles();
 
   return(
-    <Button 
+    <Button
       className={classes.button}
       variant="outlined" onClick={() => props.select(props.content, props.nextId)}>
       {props.content}

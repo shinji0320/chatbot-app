@@ -1,6 +1,6 @@
-import { PinDropSharp } from '@material-ui/icons'
-import React from 'react'
-import {Answer} from './index'
+// import { PinDropSharp } from '@material-ui/icons'
+import React from 'react';
+import {Answer} from './index';
 
 const AnswersList = (props) => {
   return(
